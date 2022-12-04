@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         MenuList opt1 = new MenuList("Create Routine");  // Objects holding the text for each menu button
         MenuList opt2 = new MenuList("View Routines");
         MenuList opt3 = new MenuList("Delete All Routines/Exercises");
-        MenuList opt4 = new MenuList("Exercise Information");
+        MenuList opt4 = new MenuList("Find Exercise Information");
 
         ArrayList<MenuList> mainMenu = new ArrayList<MenuList>(); // ArrayList to hold menu buttons
         mainMenu.add(opt1);

@@ -12,7 +12,7 @@
         android:layout_marginStart="84dp"
 
         android:layout_marginTop="268dp"
-        android:text="Delete all exercises"
+        android:text="Delete all routines"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -23,7 +23,7 @@
         android:layout_marginStart="85dp"
 
         android:layout_marginTop="40dp"
-        android:text="Delete all routines"
+        android:text="Delete all exercises"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 

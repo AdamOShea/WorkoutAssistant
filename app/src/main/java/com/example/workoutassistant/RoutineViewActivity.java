@@ -9,7 +9,7 @@ import android.widget.TextView;
 /******************
 Class name: Routine View Activity
 
-Description: Allows user to view an activity
+Description: Allows user to view a routine in depth
  */
 
 public class RoutineViewActivity extends Activity {
