@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/repetitions"
+        android:layout_width="310dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Repetitions Per Set"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/restTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sets" />
+
+    <EditText
+        android:id="@+id/targetWeight"
+        android:layout_width="309dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#2196F3"
+        android:capitalize="words"
+        android:ems="10"
+        android:hint="Target Weight (Kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/createExerciseButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startWeight" />
+
+    <EditText
+        android:id="@+id/startWeight"
+        android:layout_width="307dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Starting Weight (Kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/targetWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restTime" />
+
+    <EditText
+        android:id="@+id/restTime"
+        android:layout_width="307dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Amount of Rest Time (seconds)"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/startWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repetitions" />
+
+    <EditText
+        android:id="@+id/exerciseName"
+        android:layout_width="309dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2196F3"
+        android:capitalize="none"
+        android:ems="10"
+        android:hint="Exercise Name"
+        android:inputType="text|textCapSentences"
+        app:layout_constraintBottom_toTopOf="@+id/sets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sets"
+        android:layout_width="309dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Sets"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/repetitions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseName" />
+
+    <Button
+        android:id="@+id/createExerciseButton"
+        android:layout_width="237dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="19dp"
+        android:background="#4ABD00"
+        android:text="Create Exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/targetWeight" />
+
+    <Button
+        android:id="@+id/cancelCreateButton"
+        android:layout_width="95dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:background="#D50000"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/createExerciseButton"
+        app:layout_constraintTop_toBottomOf="@+id/targetWeight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

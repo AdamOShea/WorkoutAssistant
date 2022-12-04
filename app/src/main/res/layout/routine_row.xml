@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/EDrest"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        app:layout_constraintStart_toEndOf="@+id/EDSets"
+        app:layout_constraintTop_toBottomOf="@+id/EDexTitle" />
+
+    <TextView
+        android:id="@+id/EDstartW"
+        android:layout_width="129dp"
+        android:layout_height="41dp"
+        app:layout_constraintStart_toEndOf="@+id/EDreps"
+        app:layout_constraintTop_toBottomOf="@+id/EDrest" />
+
+    <TextView
+        android:id="@+id/EDEtargetW"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        app:layout_constraintStart_toEndOf="@+id/EDrest"
+        app:layout_constraintTop_toBottomOf="@+id/EDexTitle" />
+
+    <TextView
+        android:id="@+id/EDreps"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDSets" />
+
+    <TextView
+        android:id="@+id/EDexTitle"
+        android:layout_width="385dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EDSets"
+        android:layout_width="119dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDexTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
